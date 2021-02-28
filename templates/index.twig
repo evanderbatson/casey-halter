@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- Site by Evander Batson (evanderbatson.com)-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{{ brand.brand }}</title>
+        <meta name="description" content="Casey's Portfolio Site">
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:title" content="Casey Halter" />
+        <meta property="og:description" content="Writer, strategist, and content designer with 8+ years in the agency, media, and publishing landscapes." />
+        <meta property="og:image" content="/assets/casey-halter-share.jpg" />
+
+    </head>
+
+    <body>
+        <header>
+            <div class="brand">
+                <h3>{{ brand.brand }}</h3>
+            </div>
+            <div class="contact">
+                <h3>
+                    <a href="mailto:{{ socials.email }}" target="_blank">Contact</a>
+                </h3>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="bio">
+                <div class="bio-title">
+                    <div class="bio-title--header">
+                        <div class="headshot" style="background-image:url('/assets/casey-halter.jpg')">
+                        </div>
+                        <div class="headers">
+                            {{ entry.header }}
+                        </div>
+                    </div>
+                    <div class="bio-body">
+                        {{ entry.body }}
+                    </div>
+                </div>
+                <div class="bio-exp">
+                    {{ entry.bio }}
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="social">
+                <h3>
+                    <a href="{{ socials.linkedin }}" target="_blank">LinkedIn</a>
+                    <span class="glass pipe">|</span>
+                    <a href="{{ socials.twitter }}" target="_blank">Twitter</a>
+                    <span class="glass pipe">|</span>
+                    <a href="{{ socials.instagram }}" target="_blank">Instagram</a>
+                </h3>
+            </div>
+            <div class="decks">
+                <h3>
+                    <a href="/docs/CaseyHalter-Resume-2021.pdf" target="_blank">Resumé</a>
+                    <span class="glass pipe">|</span>
+                    <a href="/docs/CaseyHalter-Portfolio-2021.pdf" target="_blank">Portfolio</a>
+                </h3>
+            </div>
+        </footer>
+    </body>
+</html>

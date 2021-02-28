@@ -1,0 +1,18 @@
+fieldLayouts:
+  874162d5-b9f1-433c-ba12-cec9cbb8b148:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 159ffa72-9f7e-4208-949b-ab683213193e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Brand
+        sortOrder: 1
+handle: brand
+name: Brand

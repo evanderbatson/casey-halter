@@ -1,0 +1,136 @@
+$spacing-m: 3em;
+$spacing-s: 2em;
+$spacing-xs: 1em;
+$spacing-xxs: 0.8em;
+
+$text-xl: 3.7rem;
+$text-l: 2.6rem;
+$text-m: 1.4rem;
+$text-s: 1.2rem;
+
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	background: black;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	margin-bottom: .5em;
+	color: white;
+}
+
+h1 {
+	font-size: $text-xl;
+	line-height: 1.1;
+	@media only screen and (max-width: 720px) {
+		font-size: $text-l;
+	}
+}
+
+h3 {
+	font-size: $text-m;
+	line-height: 1.4;
+	@media only screen and (max-width: 720px) {
+		font-size: $text-s;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	transition: ease 300ms opacity;
+}
+
+a:hover {
+	opacity: .33;
+}
+
+.glass {
+	opacity: 0.33;
+	cursor: default;
+}
+
+.pipe {
+	margin-left: $spacing-xxs;
+	margin-right: $spacing-xxs;
+}
+
+header, footer {
+	padding: $spacing-m;
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-width: 720px) {
+		padding: $spacing-s;
+	}
+}
+
+.wrapper {
+	display: flex;
+	width: 100%;
+	height: 70vh;
+	align-items: center;
+	justify-content: center;
+	@media only screen and (max-width: 720px) {
+		display: inline-block;
+		height: 100%;
+	}
+}
+
+
+.bio {
+	padding: $spacing-m;
+	max-width: 600px;
+	.bio-title {
+		margin-bottom: $spacing-s;
+	}
+	.bio-title--header {
+		display: flex;
+		margin-bottom: $spacing-s;
+		.headshot {
+			width: 10em;
+			height: 10em;
+			background-size: cover;
+			background-position: center;
+			margin-right: $spacing-s;
+			cursor: wait;
+		}
+	}
+	@media only screen and (max-width: 720px) {
+		padding: $spacing-s;
+		max-width: 100%;
+		.bio-title {}
+		.bio-title--header {
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 0;
+			.headshot {
+				margin-bottom: $spacing-s;
+			}
+		}
+	}
+}
+
+footer {
+	position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @media only screen and (max-width: 720px) {
+    	position: static;
+    	display: inline-block;
+    	.social, .decks {
+    		width: 100%;
+    	}
+    	.social {
+    		margin-bottom: $spacing-s;
+    	}
+    }
+}
